@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "tidetumo/ViewController.m"
-         timestampString = "383270075.030941"
+         timestampString = "383271413.363388"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "42"
-         endingLineNumber = "42"
+         startingLineNumber = "50"
+         endingLineNumber = "50"
          landmarkName = "-startTimer"
          landmarkType = "5">
       </FileBreakpoint>

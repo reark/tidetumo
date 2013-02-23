@@ -37,14 +37,22 @@
     }
 }
 
+- (void)stopTimer {
+    if (self.updateTimer) {
+        [self.updateTimer invalidate];
+        self.updateTimer = nil;
+    }
+}
+
 - (void)startTimer {
+    [self stopTimer];
     self.updateTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateTime) userInfo:nil repeats:YES];
     [self.resetButton setHidden:NO];
     [self.startButton setHidden:YES];
 }
 
 - (void)resetTimer {
-    self.updateTimer = nil;
+    [self stopTimer];
     self.timeRemaining = 25*60;
     [self.timeIsUpLabel setHidden:YES];
     [self updateStatusLabel];
@@ -53,9 +61,8 @@
 }
 
 - (void)timeIsUp {
+    [self stopTimer];
     NSLog(@"Time is up!");
-    [self.updateTimer invalidate];
-    self.updateTimer = nil;
     [self.timeIsUpLabel setHidden:NO];
     AudioServicesPlaySystemSound (kSystemSoundID_Vibrate);
 }
