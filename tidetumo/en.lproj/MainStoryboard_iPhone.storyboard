@@ -1,23 +1,105 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="25:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dk8-cs-QNM">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="259" id="Lsq-wg-iEq"/>
+                                    <constraint firstAttribute="width" constant="239" id="nJk-mN-mfO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOz-c3-opI">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="2" eventType="touchUpInside" id="lU6-r4-Ag3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Time is up!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSW-qU-Id8">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="202" id="GxG-bn-sXG"/>
+                                    <constraint firstAttribute="height" constant="51" id="SH8-18-EVX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08Q-Wc-vxb">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="w4c-Gu-2lv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="2" eventType="touchUpInside" id="ihI-ZN-tTp"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kOz-c3-opI" firstAttribute="top" secondItem="dk8-cs-QNM" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="6Ie-zz-Sa3"/>
+                            <constraint firstItem="hSW-qU-Id8" firstAttribute="top" secondItem="3" secondAttribute="top" constant="186" id="6xX-P6-eZD"/>
+                            <constraint firstItem="08Q-Wc-vxb" firstAttribute="leading" secondItem="kOz-c3-opI" secondAttribute="leading" type="default" id="G9a-PA-8VT"/>
+                            <constraint firstItem="08Q-Wc-vxb" firstAttribute="trailing" secondItem="kOz-c3-opI" secondAttribute="trailing" type="default" id="GCM-Fl-tMq"/>
+                            <constraint firstItem="kOz-c3-opI" firstAttribute="centerX" secondItem="hSW-qU-Id8" secondAttribute="centerX" type="default" id="Gud-9O-n36"/>
+                            <constraint firstItem="08Q-Wc-vxb" firstAttribute="baseline" secondItem="kOz-c3-opI" secondAttribute="baseline" type="default" id="Si4-hQ-YPR"/>
+                            <constraint firstItem="dk8-cs-QNM" firstAttribute="top" secondItem="3" secondAttribute="top" constant="144" id="Smn-V5-alf"/>
+                            <constraint firstItem="hSW-qU-Id8" firstAttribute="centerX" secondItem="dk8-cs-QNM" secondAttribute="centerX" type="default" id="ZHT-eT-m48"/>
+                            <constraint firstItem="08Q-Wc-vxb" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="isF-KL-YZ9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resetButton" destination="08Q-Wc-vxb" id="xne-Di-bPE"/>
+                        <outlet property="startButton" destination="kOz-c3-opI" id="CR2-Sv-Ccr"/>
+                        <outlet property="statusLabel" destination="dk8-cs-QNM" id="Mhw-sb-XKC"/>
+                        <outlet property="timeIsUpLabel" destination="hSW-qU-Id8" id="Gah-CX-IhT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="220" y="84"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonPressed:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="resetButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="startButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="statusLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="timeIsUpLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

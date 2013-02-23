@@ -24,6 +24,7 @@
 		26A7DB3B16D8257600FB66D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A7DB1316D8257600FB66D6 /* Foundation.framework */; };
 		26A7DB4316D8257600FB66D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26A7DB4116D8257600FB66D6 /* InfoPlist.strings */; };
 		26A7DB4616D8257600FB66D6 /* tidetumoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A7DB4516D8257600FB66D6 /* tidetumoTests.m */; };
+		26A7DBA216D8397400FB66D6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A7DBA116D8397400FB66D6 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		26A7DB4216D8257600FB66D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		26A7DB4416D8257600FB66D6 /* tidetumoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tidetumoTests.h; sourceTree = "<group>"; };
 		26A7DB4516D8257600FB66D6 /* tidetumoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tidetumoTests.m; sourceTree = "<group>"; };
+		26A7DBA116D8397400FB66D6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26A7DBA216D8397400FB66D6 /* AudioToolbox.framework in Frameworks */,
 				26A7DB1216D8257600FB66D6 /* UIKit.framework in Frameworks */,
 				26A7DB1416D8257600FB66D6 /* Foundation.framework in Frameworks */,
 				26A7DB1616D8257600FB66D6 /* CoreGraphics.framework in Frameworks */,
@@ -89,6 +92,7 @@
 		26A7DB0216D8257500FB66D6 = {
 			isa = PBXGroup;
 			children = (
+				26A7DBA116D8397400FB66D6 /* AudioToolbox.framework */,
 				26A7DB1716D8257600FB66D6 /* tidetumo */,
 				26A7DB3E16D8257600FB66D6 /* tidetumoTests */,
 				26A7DB1016D8257600FB66D6 /* Frameworks */,
